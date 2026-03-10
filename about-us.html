@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noek — Over ons</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="about-us-page">
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a href="#top" class="logo">Noek</a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav id="mobile-menu" class="mobile-menu">
+        <a href="#top">Home</a>
+        <a href="#about">Over Ons</a>
+        <a href="#hoe">Features</a>
+        <a href="#faq">Veelgestelde vragen</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact">Boek Demo</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container about-hero" id="about">
+        <h1>Over Ons</h1>
+      </section>
+
+      <section class="container story">
+        <img src="https://api.builder.io/api/v1/image/assets/TEMP/45f20910b0125752eee338ac03b3d24e507dd14b?width=786" alt="Het verhaal achter Noek" />
+        <h2>Het verhaal achter Noek</h2>
+        <p>Soms wil je even stilstaan bij iemand. Niet op een vaste plek. Maar waar je op dat moment bent.</p>
+        <p>In de trein. Aan een tafel. Op een stille wandeling.</p>
+        <p>Noek ontstond vanuit dat gevoel. De behoefte aan een plek die altijd dichtbij is. Een plek waar herinneringen zacht aanwezig mogen zijn. Niet groot. Niet zwaar. Gewoon een ruimte waar iemand nog even kan blijven.</p>
+      </section>
+
+      <section class="container what" id="hoe">
+        <h2>Wat doen we?</h2>
+        <div class="what-grid">
+          <img src="https://api.builder.io/api/v1/image/assets/TEMP/6f8bb32f8fd4b2a935cf2806852826f7a19a0655?width=336" alt="Wat doen we" />
+          <p>Noek is een white-label platform waarmee uitvaartondernemingen families een persoonlijke, digitale herdenkingsruimte aanbieden. Naadloos geïntegreerd in jouw dienstverlening. Het is een plek waar de herinneringen van dierbaren blijven bestaan.</p>
+        </div>
+      </section>
+
+      <section class="container vm">
+        <article>
+          <h3>Onze visie</h3>
+          <img src="https://api.builder.io/api/v1/image/assets/TEMP/e00b1d41cc56366293686c21c2f1f56c8ea50ecc?width=722" alt="Onze visie" />
+          <p>Herdenken hoort niet vast te zitten aan één plaats. Niet aan een dag op de kalender. Niet aan een bepaalde manier.</p>
+          <p>Herinneringen bewegen met ons mee. Door de tijd. Door het leven.</p>
+          <p>Wij geloven dat herinneren iets levends is. Iets dat kan groeien. Een foto die opnieuw betekenis krijgt. Een gedachte die later pas woorden vindt. Een moment dat je samen wilt delen.</p>
+          <p>Daarom zien wij herdenken als een open ruimte. Een digitale plek die meebeweegt.</p>
+        </article>
+
+        <article>
+          <h3>Onze missie</h3>
+          <img src="https://api.builder.io/api/v1/image/assets/TEMP/569894542ed155ca8963e714522c55bc947df8f4?width=722" alt="Onze missie" />
+          <p>Noek wil mensen een digitale plek geven waar herinneringen kunnen blijven bestaan.</p>
+          <p>Niet als iets dat afgesloten wordt. Maar als iets dat mag blijven. Een plek waar je iemand kan herinneren op jouw manier. Met woorden. Met beelden. Met stilte.</p>
+          <p>En waar anderen even kunnen meekomen. Soms samen. Soms alleen. Vanuit verschillende plekken. Maar toch dichtbij.</p>
+          <p>Zo ontstaat er een kleine digitale ruimte rond een herinnering. Een plek van licht. Waar iemand nog even aanwezig mag zijn.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-grid">
+        <section>
+          <h4>Noek</h4>
+          <p>Herdenken stopt niet<br />We leven verspreid.<br />We rouwen anders.<br />We herinneren persoonlijker.</p>
+          <a href="#contact" class="tiny-btn">Boek een demo</a>
+        </section>
+        <section>
+          <h5>Site map</h5>
+          <a href="#top">Homepage</a>
+          <a href="#about">Over Ons</a>
+          <a href="#hoe">Feautres</a>
+          <a href="#faq">F.A.Q.</a>
+          <a href="#contact">Contact</a>
+        </section>
+        <section id="faq">
+          <h5>Legal</h5>
+          <a href="#">Privacybeleid</a>
+          <a href="#">Algemene Voorwaarden</a>
+        </section>
+      </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Terug naar boven">↑</button>
+
+    <script>
+      const menuButton = document.querySelector('.menu-toggle');
+      const mobileMenu = document.querySelector('#mobile-menu');
+      const backToTop = document.querySelector('.back-to-top');
+
+      menuButton?.addEventListener('click', () => {
+        const open = mobileMenu.classList.toggle('open');
+        menuButton.setAttribute('aria-expanded', String(open));
+      });
+
+      mobileMenu?.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('open');
+          menuButton?.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      backToTop?.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+  </body>
+</html>
