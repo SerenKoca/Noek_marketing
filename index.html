@@ -19,7 +19,16 @@
   <body class="home-page">
     <header class="site-header" id="top">
       <div class="container nav-wrap">
-        <a href="#top" class="logo" aria-label="Noek home">Noek</a>
+        <a href="#top" class="logo" aria-label="Noek home">
+          <img src="images/Logo-primair.png" alt="Noek" class="logo-img" />
+        </a>
+        <nav class="desktop-nav" aria-label="Hoofdmenu">
+          <a href="about-us.html">Over ons</a>
+          <a href="#hoe">Features</a>
+          <a href="#faq">F.A.Q</a>
+          <a href="#contact">Contact</a>
+          <a class="btn btn-primary nav-cta" href="#demo">Boek een demo</a>
+        </nav>
         <button
           class="menu-toggle"
           aria-expanded="false"
@@ -41,7 +50,16 @@
     </header>
 
     <main id="main" class="home-main">
-      <section class="container home-hero" aria-label="Header afbeelding"></section>
+      <section class="container home-hero" aria-label="Header afbeelding">
+        <div class="home-hero-content">
+          <h1>Noek</h1>
+          <p>Herdenken stopt niet na de uitvaart</p>
+          <div class="home-hero-actions">
+            <a class="btn btn-primary" href="#hoe">Ontdek de Features</a>
+            <a class="btn btn-secondary" href="#about">Wie zijn we?</a>
+          </div>
+        </div>
+      </section>
 
       <section id="about" class="container home-about">
         <h1>Wat is Noek?</h1>
@@ -55,21 +73,23 @@
       </section>
 
       <section id="hoe" class="container home-how">
-        <h2>Hoe werkt Noek?</h2>
-        <p>
-          Wij verbinden technologie en uitvaartzorg voor blijvende digitale
-          herdenkingsplekken. Zonder extra werkdruk, met jou als menselijk
-          aanspreekpunt.
-        </p>
-        <p class="home-demo-label">Vraag hieronder een gratis demo aan</p>
-
-        <div id="demo" class="home-demo">
-          <div class="home-video-placeholder" aria-label="Video placeholder">
-            Video demo
-          </div>
+        <div class="home-how-copy">
+          <h2>Hoe werkt Noek?</h2>
+          <p>
+            Wij verbinden technologie en uitvaartzorg voor blijvende digitale
+            herdenkingsplekken. Zonder extra werkdruk, met jou als menselijk
+            aanspreekpunt.
+          </p>
+          <p class="home-demo-label">Vraag hieronder een gratis demo aan</p>
           <div class="home-demo-buttons">
             <a class="btn btn-primary" href="#contact">Boek een Demo</a>
             <a class="btn btn-secondary" href="about-us.html">Meer info</a>
+          </div>
+        </div>
+
+        <div id="demo" class="home-demo">
+          <div class="home-video-placeholder" aria-label="Video placeholder">
+            <span>Video demo</span>
           </div>
         </div>
       </section>
@@ -80,15 +100,17 @@
         <article class="home-card">
           <h3>Onze visie</h3>
           <div class="home-card-row">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/6dc2ed550cec4b077af82d207a05a1bbbe554db7?width=336"
-              alt="Onze visie"
-              loading="lazy"
-            />
             <p>
               Wij geloven in een samenleving waarin herdenken niet stopt na de
               uitvaart, maar uitgroeit tot een blijvend en persoonlijk proces.
             </p>
+            <div class="home-card-media">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/6dc2ed550cec4b077af82d207a05a1bbbe554db7?width=336"
+                alt="Onze visie"
+                loading="lazy"
+              />
+            </div>
           </div>
         </article>
 
@@ -101,11 +123,13 @@
               herdenkingsruimte kunnen aanbieden.
               <a href="about-us.html">Lees meer</a>
             </p>
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/9096203d1f662b8190adb3a0fdda9ae310196d4f?width=336"
-              alt="Onze missie"
-              loading="lazy"
-            />
+            <div class="home-card-media">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/9096203d1f662b8190adb3a0fdda9ae310196d4f?width=336"
+                alt="Onze missie"
+                loading="lazy"
+              />
+            </div>
           </div>
         </article>
       </section>
@@ -114,7 +138,7 @@
     <footer id="contact" class="site-footer">
       <div class="footer-grid">
         <section>
-          <h4>Noek</h4>
+          <img src="images/logoNaam-zwart.png" alt="Noek" class="footer-logo-img" />
           <p>
             Herdenken stopt niet<br />We leven verspreid.<br />We rouwen
             anders.<br />We herinneren persoonlijker.
@@ -126,7 +150,7 @@
           <h5>Site map</h5>
           <a href="#top">Homepage</a>
           <a href="about-us.html">Over Ons</a>
-          <a href="#hoe">Feautres</a>
+          <a href="#hoe">Features</a>
           <a href="#faq">F.A.Q.</a>
           <a href="#contact">Contact</a>
         </section>
@@ -135,6 +159,17 @@
           <h5>Legal</h5>
           <a href="#">Privacybeleid</a>
           <a href="#">Algemene Voorwaarden</a>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn" class="social-link linkedin">
+              <span class="icon-linkedin" aria-hidden="true">in</span>
+            </a>
+            <a href="#" aria-label="Facebook" class="social-link facebook">
+              <span class="icon-facebook" aria-hidden="true">f</span>
+            </a>
+            <a href="#" aria-label="Instagram" class="social-link instagram">
+              <span class="icon-instagram" aria-hidden="true"></span>
+            </a>
+          </div>
         </section>
       </div>
 
