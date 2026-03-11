@@ -3,6 +3,7 @@ const mobileMenu = document.querySelector('#mobile-menu');
 const menuLinks = mobileMenu?.querySelectorAll('a') ?? [];
 const backToTopButton = document.querySelector('.back-to-top');
 
+//Menu functionaliteit
 if (menuButton && mobileMenu) {
   menuButton.addEventListener('click', () => {
     const isOpen = mobileMenu.classList.toggle('open');
@@ -19,12 +20,14 @@ if (menuButton && mobileMenu) {
   });
 }
 
+//Back to top functionaliteit
 if (backToTopButton) {
   backToTopButton.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
 
+//Reveal on scroll functionaliteit
 const revealSelectors = [
   '.home-hero-content',
   '.home-about',
