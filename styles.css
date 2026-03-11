@@ -904,12 +904,12 @@ h2 {
   text-decoration: underline;
 }
 
-.home-page .site-footer {
+.home-page .site-footer, .about-us-page .site-footer {
   margin-top: 24px;
   padding: 18px 14px 34px;
 }
 
-.home-page .footer-grid {
+.home-page .footer-grid, .about-us-page .footer-grid {
   width: min(100%, 393px);
   margin: 0 auto;
   display: grid;
@@ -919,7 +919,9 @@ h2 {
 }
 
 .home-page .footer-grid h4,
-.home-page .footer-grid h5 {
+.home-page .footer-grid h5,
+.about-us-page .footer-grid h4,
+.about-us-page .footer-grid h5 {
   margin: 0 0 8px;
   color: #000;
   font-family: Outfit, sans-serif;
@@ -927,14 +929,14 @@ h2 {
   font-weight: 600;
 }
 
-.home-page .footer-grid p {
+.home-page .footer-grid p, .about-us-page .footer-grid p {
   margin: 0;
   color: #000;
   font-size: 11px;
   line-height: 1.45;
 }
 
-.home-page .footer-grid a {
+.home-page .footer-grid a, .about-us-page .footer-grid a {
   color: #674cbf;
   text-decoration: none;
   font-family: Outfit, sans-serif;
@@ -942,17 +944,17 @@ h2 {
   line-height: 1.2;
 }
 
-.home-page .footer-grid section {
+.home-page .footer-grid section, .about-us-page .footer-grid section {
   display: grid;
   align-content: start;
   gap: 8px;
 }
 
-.home-page .footer-grid section a + a {
+.home-page .footer-grid section a + a, .about-us-page .footer-grid section a + a {
   margin-top: 2px;
 }
 
-.home-page .footer-logo-img {
+.home-page .footer-logo-img, .about-us-page .footer-logo-img {
   width: 100%;
   max-width: 118px;
   height: auto;
@@ -960,7 +962,7 @@ h2 {
   display: block;
 }
 
-.home-page .tiny-btn {
+.home-page .tiny-btn, .about-us-page .tiny-btn {
   margin-top: 10px;
   display: inline-flex;
   align-items: center;
@@ -976,14 +978,14 @@ h2 {
   background: transparent;
 }
 
-.home-page .social-links {
+.home-page .social-links, .about-us-page .social-links {
   display: flex;
   gap: 8px;
   margin-top: 8px;
   flex-wrap: wrap;
 }
 
-.home-page .social-link {
+.home-page .social-link, .about-us-page .social-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -997,25 +999,25 @@ h2 {
 }
 
 .home-page .icon-linkedin,
-.home-page .icon-facebook {
+.home-page .icon-facebook, .about-us-page .icon-linkedin, .about-us-page .icon-facebook {
   color: #fff;
   font-family: Arial, sans-serif;
   font-weight: 700;
   line-height: 1;
 }
 
-.home-page .icon-linkedin {
+.home-page .icon-linkedin, .about-us-page .icon-linkedin {
   font-size: 18px;
   letter-spacing: -1px;
   transform: translateY(1px);
 }
 
-.home-page .icon-facebook {
+.home-page .icon-facebook, .about-us-page .icon-facebook {
   font-size: 24px;
   transform: translateY(2px);
 }
 
-.home-page .icon-instagram {
+.home-page .icon-instagram, .about-us-page .icon-instagram {
   width: 19px;
   height: 19px;
   border: 2.5px solid #fff;
@@ -1024,7 +1026,7 @@ h2 {
   display: block;
 }
 
-.home-page .icon-instagram::before {
+.home-page .icon-instagram::before, .about-us-page .icon-instagram::before {
   content: '';
   position: absolute;
   inset: 4px;
@@ -1032,7 +1034,7 @@ h2 {
   border-radius: 999px;
 }
 
-.home-page .icon-instagram::after {
+.home-page .icon-instagram::after, .about-us-page .icon-instagram::after {
   content: '';
   position: absolute;
   width: 4px;
@@ -1422,38 +1424,38 @@ h2 {
     font-size: 18px;
   }
 
-  .home-page .social-links {
+  .home-page .social-links, .about-us-page .social-links {
     gap: 12px;
     margin-top: 14px;
   }
 
-  .home-page .social-link {
+  .home-page .social-link, .about-us-page .social-link {
     width: 50px;
     height: 50px;
   }
 
-  .home-page .icon-linkedin {
+  .home-page .icon-linkedin, .about-us-page .icon-linkedin {
     font-size: 22px;
   }
 
-  .home-page .icon-facebook {
+  .home-page .icon-facebook, .about-us-page .icon-facebook {
     font-size: 31px;
     transform: translateY(3px);
   }
 
-  .home-page .icon-instagram {
+  .home-page .icon-instagram, .about-us-page .icon-instagram {
     width: 24px;
     height: 24px;
     border: 3px solid #fff;
     border-radius: 8px;
   }
 
-  .home-page .icon-instagram::before {
+  .home-page .icon-instagram::before, .about-us-page .icon-instagram::before {
     inset: 5px;
     border: 3px solid #fff;
   }
 
-  .home-page .icon-instagram::after {
+  .home-page .icon-instagram::after, .about-us-page .icon-instagram::after {
     width: 5px;
     height: 5px;
     top: 3px;
