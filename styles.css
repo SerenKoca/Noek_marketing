@@ -321,6 +321,7 @@ h2 {
   color: var(--off-white);
   font-size: 1.6rem;
   cursor: pointer;
+  z-index: 1000;
 }
 
 @media (min-width: 768px) {
