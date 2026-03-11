@@ -1090,22 +1090,22 @@ h2 {
 }
 
 @media (min-width: 768px) {
-  .home-page .site-header {
+  .home-page .site-header, .about-us-page .site-header {
     background: #f3f1f6;
     border-bottom: 1px solid rgba(77, 57, 143, 0.08);
   }
 
-  .home-page .nav-wrap {
+  .home-page .nav-wrap, .about-us-page .nav-wrap {
     min-height: 124px;
     width: min(1180px, 94vw);
     gap: 32px;
   }
 
-  .home-page .logo-img {
+  .home-page .logo-img, .about-us-page .logo-img {
     height: 74px;
   }
 
-  .home-page .desktop-nav {
+  .home-page .desktop-nav, .about-us-page .desktop-nav {
     display: inline-flex;
     align-items: center;
     justify-content: flex-end;
@@ -1115,7 +1115,7 @@ h2 {
     flex: 1;
   }
 
-  .home-page .desktop-nav a {
+  .home-page .desktop-nav a, .about-us-page .desktop-nav a{
     color: #1f1b24;
     text-decoration: none;
     font-size: 14px;
@@ -1123,7 +1123,7 @@ h2 {
     line-height: 1;
   }
 
-  .home-page .desktop-nav .nav-cta {
+  .home-page .desktop-nav .nav-cta, .about-us-page .desktop-nav .nav-cta {
     min-height: 0;
     padding: 13px 20px;
     border-radius: 9px;
