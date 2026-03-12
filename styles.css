@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Ambella';
+  src: url('fonts/ambella-Regular-BF690738d429003.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --bg-gradient: linear-gradient(157deg, #fbf5ee 31.39%, #e8e4f5 65.61%);
   --footer-gradient: linear-gradient(104deg, #fad1cf 13.67%, #eadae5 55.59%, #b3a4d5 98.43%);
@@ -23,6 +30,11 @@ body {
   background: var(--bg-gradient);
   scroll-behavior: smooth;
 }
+
+h1, h2{
+  font-family: 'Ambella', cursive;
+}
+
 
 .skip-link {
   position: absolute;
@@ -175,8 +187,7 @@ body {
   margin-bottom: 8px;
 }
 
-h1,
-h2,
+
 h3,
 h4,
 h5 {
@@ -424,8 +435,8 @@ h2 {
 .about-us-page h1,
 .about-us-page h2 {
   margin: 0;
-  font-family: Outfit, sans-serif;
-  font-weight: 500;
+  font-family: 'Ambella', cursive;
+  font-weight: 400;
 }
 
 .about-us-page .about-hero h1 {
@@ -721,8 +732,8 @@ h2 {
 .home-page h1,
 .home-page h2 {
   margin: 0;
-  font-family: Outfit, sans-serif;
-  font-weight: 500;
+  font-family: 'Ambella', cursive;
+  font-weight: 400;
 }
 
 .home-page .home-about h1 {
